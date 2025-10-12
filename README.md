@@ -14,7 +14,7 @@
 
     header {
       background: url('Generated Image October 12, 2025 - 12_40AM (1).png') no-repeat center/cover;
-      height: 420px;
+      height: 520px;
       display: flex;
       flex-direction: column;
       align-items: center;
