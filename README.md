@@ -1,7 +1,4 @@
-# In-Direct-car-dealer
-src/components/DealerApp.jsx
-# Create the HTML file for download
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
