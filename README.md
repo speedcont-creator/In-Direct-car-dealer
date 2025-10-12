@@ -12,28 +12,28 @@
       color: #222;
     }
 
-    /* 상단 이미지 영역 */
+    /* 밝은 배경 버전 */
     header {
       position: relative;
       width: 100%;
-      height: 100vh; /* 화면 꽉 채움 */
-      background: url('main-bg.jpg') no-repeat center center;
-      background-size: contain; /* 이미지 전체 표시 */
-      background-color: #000;
+      height: 100vh;
+      background: url('main-bg-bright.jpg') no-repeat center center;
+      background-size: contain;
+      background-color: #fff;
       display: flex;
-      justify-content: flex-end; /* 오른쪽 정렬 */
+      justify-content: flex-end;
       align-items: center;
-      padding-right: 10%;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding-right: 6%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .header-text {
       text-align: right;
-      color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-      background: rgba(0, 0, 0, 0.3);
+      color: #222; /* 밝은 배경에 어두운 글씨 */
+      background: rgba(255, 255, 255, 0.6);
       padding: 20px 30px;
       border-radius: 15px;
+      backdrop-filter: blur(3px);
     }
 
     .header-text h1 {
@@ -43,13 +43,13 @@
     }
 
     .header-text h1 span {
-      color: #2d9cdb; /* 파란색 ‘인’ 강조 */
+      color: #007bff; /* ‘인’ 파란색 */
     }
 
     .header-text .phone {
       margin-top: 12px;
       font-size: 1.3rem;
-      color: #2d9cdb;
+      color: #007bff;
       font-weight: 600;
     }
 
