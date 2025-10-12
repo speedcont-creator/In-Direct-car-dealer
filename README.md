@@ -12,40 +12,48 @@
       color: #222;
     }
 
+    /* 상단 이미지 영역 */
     header {
-      background: url('Generated Image October 12, 2025 - 12_40AM (1).png') no-repeat center/cover;
-      height: 520px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       position: relative;
+      width: 100%;
+      height: 100vh; /* 화면 꽉 채움 */
+      background: url('main-bg.jpg') no-repeat center center;
+      background-size: contain; /* 이미지 전체 표시 */
+      background-color: #000;
+      display: flex;
+      justify-content: flex-end; /* 오른쪽 정렬 */
+      align-items: center;
+      padding-right: 6%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
-    header img.logo {
-      width: 200px;
-      margin-bottom: 15px;
+    .header-text {
+      text-align: right;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px 30px;
+      border-radius: 15px;
     }
 
-    h1 {
-      font-size: 2.2rem;
+    .header-text h1 {
+      font-size: 2.6rem;
       margin: 0;
       font-weight: 700;
     }
 
-    h1 span {
-      color: #007bff;
+    .header-text h1 span {
+      color: #2d9cdb; /* 파란색 ‘인’ 강조 */
     }
 
-    .phone {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #007bff;
+    .header-text .phone {
+      margin-top: 12px;
+      font-size: 1.3rem;
+      color: #2d9cdb;
       font-weight: 600;
     }
 
+    /* 보험사 카드 영역 */
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -97,13 +105,37 @@
       padding: 25px 0;
       font-size: 0.9rem;
     }
+
+    /* 반응형 설정 */
+    @media (max-width: 768px) {
+      header {
+        height: 70vh;
+        background-size: contain;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+
+      .header-text h1 {
+        font-size: 2rem;
+      }
+
+      .header-text .phone {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="인 다이렉트 로고.jpg" alt="인 다이렉트 카보험 로고" class="logo" />
-    <h1><span>인</span> 다이렉트 카보험</h1>
-    <div class="phone">상담전화 02-6479-7942~3</div>
+    <div class="header-text">
+      <img src="인 다이렉트 로고.jpg" alt="인 다이렉트 로고" style="width:180px; margin-bottom:10px;"><br>
+      <h1><span>인</span> 다이렉트 카보험</h1>
+      <div class="phone">상담전화 02-6479-7942~3</div>
+    </div>
   </header>
 
   <main class="container">
@@ -162,9 +194,3 @@
   </footer>
 </body>
 </html>
-"""
-file_path = "/mnt/data/indirect_car_main.html"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-file_path
