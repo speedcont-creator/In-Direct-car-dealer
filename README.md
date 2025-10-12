@@ -23,7 +23,7 @@
       display: flex;
       justify-content: flex-end; /* 오른쪽 정렬 */
       align-items: center;
-      padding-right: 6%;
+      padding-right: 10%;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
