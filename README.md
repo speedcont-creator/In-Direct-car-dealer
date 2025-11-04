@@ -168,7 +168,7 @@
 
     <div class="brand-card">
       <img src="한화 이미지.png" alt="한화손해보험" />
-      <div class="phone-number">070-7873-3060</div>
+      <div class="phone-number">070-7873-3061</div>
     </div>
 
     <div class="brand-card">
