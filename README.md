@@ -179,7 +179,7 @@
     <div class="brand-card">
       <a href="https://www.axa.co.kr/index_email_relay.jsp?sm_flag=N&site_acq_src=0104522&cmpid=co_able_dis_sb_auto&relay_lang_type=ko&go_url=%2FActionControler.action%3FscreenID%3DSHAI0000%26actionID%3DI01%26utm_source%3Dable%26utm_medium%3Daffiliate%26utm_campaign%3Dauto&cnc_no=alble0158" target="_blank">
         <img src="회사로고2.jpg" alt="AXA손해보험" />
-      </a>
+        <div class="phone-number">1670-9240</div>
     </div>
 
     <div class="brand-card">
